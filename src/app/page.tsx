@@ -189,27 +189,27 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {siteData.casas.map((casa, idx) => (
               <FadeIn key={casa.id} delay={idx * 150}>
-                <div className={`bg-surface rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1 h-full ${
+                <div className={`bg-surface rounded-2xl flex flex-col transition-all duration-300 hover:-translate-y-1 h-full relative ${
                   idx === 0 ? "border-2 border-primary shadow-lg" : "border border-stone-200 shadow-sm hover:shadow-md"
                 }`}>
-                  <div className="relative h-48 w-full shrink-0 border-b border-stone-100">
+                  {idx === 0 && (
+                    <div className="absolute -top-5 -right-5 z-20 pointer-events-none">
+                      <Image
+                        src="/images/logo-mcmv.png"
+                        alt="Minha Casa Minha Vida"
+                        width={80}
+                        height={50}
+                        className="object-contain"
+                      />
+                    </div>
+                  )}
+                  <div className="relative h-48 w-full shrink-0 border-b border-stone-100 overflow-hidden rounded-t-2xl">
                     <Image
                       src={casa.imagem}
                       alt={`Fachada da ${casa.nome}`}
                       fill
                       className="object-cover transition-transform duration-500 hover:scale-105"
                     />
-                    {idx === 0 && (
-                      <div className="absolute top-3 right-3 z-10 bg-white/90 p-1.5 rounded-lg shadow-sm backdrop-blur-sm pointer-events-none">
-                        <Image
-                          src="/images/logo-mcmv.png"
-                          alt="Minha Casa Minha Vida"
-                          width={60}
-                          height={40}
-                          className="object-contain"
-                        />
-                      </div>
-                    )}
                   </div>
                   <div className="p-6 flex-1 flex flex-col">
                   <div className="flex justify-between items-start mb-2">
