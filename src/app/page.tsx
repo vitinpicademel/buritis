@@ -143,7 +143,7 @@ export default function Home() {
               href={siteData.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative inline-flex items-center justify-center gap-3 bg-accent hover:opacity-90 text-white px-8 py-4 rounded-full text-lg font-bold transition-all duration-200 hover:scale-[1.02] hover:shadow-lg"
+              className="group relative inline-flex items-center justify-center gap-3 bg-accent hover:bg-[#1da065] text-white px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 shadow-[0_0_15px_#22b573] hover:shadow-[0_0_25px_#22b573] animate-pulse hover:animate-none hover:scale-105"
             >
               <MessageCircle className="w-6 h-6" />
               Quero mais informações
