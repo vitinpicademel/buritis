@@ -45,6 +45,15 @@ export default function Home() {
     });
   }, [emblaApi]);
 
+  const [showFloatingWA, setShowFloatingWA] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowFloatingWA(true);
+    }, 7000); // Aparece após 7 segundos
+    return () => clearTimeout(timer);
+  }, []);
+
   const scrollToRef = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
@@ -447,6 +456,22 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* 8. Botão Flutuante WhatsApp */}
+      {showFloatingWA && (
+        <div className="fixed bottom-6 right-6 z-50 animate-fade-in-up">
+          <Link
+            href={siteData.whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full shadow-[0_4px_15px_rgba(37,211,102,0.5)] transition-all duration-300 hover:scale-110"
+            aria-label="Falar no WhatsApp"
+          >
+            <span className="absolute inset-0 rounded-full border-2 border-[#25D366] animate-ping opacity-75 group-hover:hidden"></span>
+            <MessageCircle className="w-7 h-7 md:w-8 md:h-8 relative z-10" />
+          </Link>
+        </div>
+      )}
     </main>
   );
 }
