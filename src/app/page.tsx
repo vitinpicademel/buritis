@@ -56,9 +56,9 @@ export default function Home() {
     <main className="min-h-screen">
       {/* 1. Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-black/5 shadow-sm transition-all">
-        <div className="container mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+        <div className="container mx-auto px-6 md:px-12 h-20 md:h-24 flex items-center justify-between">
           {/* Logo */}
-          <div className="relative h-[60px] w-[200px] md:h-[72px] md:w-[260px] shrink-0">
+          <div className="relative h-12 w-[180px] md:h-16 md:w-[280px] shrink-0 flex items-center">
             <Image
               src="/images/logo.png"
               alt="Logo Parque dos Buritis 2"
@@ -391,7 +391,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16 items-start">
             <div className="text-center md:text-left flex flex-col items-center md:items-start">
-              <div className="relative h-[72px] w-[260px] mb-6 opacity-90">
+              <div className="relative h-16 md:h-20 w-[240px] md:w-[320px] mb-6 opacity-90">
                 <Image
                   src="/images/logo.png"
                   alt="Logo Parque dos Buritis 2"
