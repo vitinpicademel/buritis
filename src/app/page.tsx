@@ -156,6 +156,18 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 3. Banner Destaque */}
+      <section className="bg-primary text-white py-6 shadow-inner relative z-20">
+        <div className="container mx-auto px-4 text-center">
+          <h3 className="text-xl md:text-2xl font-sora font-bold mb-1">
+            Aceitamos seu imóvel ou veículo de menor valor como parte do pagamento<span className="text-sm font-normal align-super ml-1">(i)</span>
+          </h3>
+          <p className="text-[11px] md:text-xs text-white/80 max-w-3xl mx-auto mt-2">
+            (i) Sujeito a avaliação de mercado e análise jurídica do bem, limitado a 30% do valor de tabela.
+          </p>
+        </div>
+      </section>
+
       {/* 4. Seção Casas Disponíveis */}
       <section id="casas" className="py-20 bg-stone-50">
         <div className="container mx-auto px-4">
