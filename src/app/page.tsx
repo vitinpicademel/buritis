@@ -401,13 +401,13 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16 items-start">
             <div className="text-center md:text-left flex flex-col items-center md:items-start">
-              <Link href="/" className="mb-6 opacity-90 inline-block">
+              <Link href="/" className="mb-4 opacity-100 inline-block">
                 <Image
                   src="/images/logo.png"
                   alt="Logo Parque dos Buritis 2"
-                  width={300}
-                  height={86}
-                  className="w-[200px] md:w-[300px] h-auto object-contain"
+                  width={250}
+                  height={72}
+                  className="w-[180px] md:w-[250px] h-auto object-contain brightness-0 invert"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
                     e.currentTarget.parentElement?.classList.add('fallback-logo');
