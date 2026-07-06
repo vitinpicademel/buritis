@@ -58,12 +58,13 @@ export default function Home() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-black/5 shadow-sm transition-all">
         <div className="container mx-auto px-6 md:px-12 h-20 md:h-24 flex items-center justify-between">
           {/* Logo */}
-          <div className="relative h-12 w-[180px] md:h-16 md:w-[280px] shrink-0 flex items-center">
+          <Link href="/" className="shrink-0 flex items-center">
             <Image
               src="/images/logo.png"
               alt="Logo Parque dos Buritis 2"
-              fill
-              className="object-contain object-left mix-blend-multiply"
+              width={250}
+              height={72}
+              className="w-[180px] md:w-[250px] h-auto object-contain mix-blend-multiply"
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 e.currentTarget.parentElement?.classList.add('fallback-logo');
@@ -72,7 +73,7 @@ export default function Home() {
             <span className="hidden font-bold text-xl text-stone-800 tracking-tight fallback-text">
               Parque dos Buritis 2
             </span>
-          </div>
+          </Link>
 
           {/* Navegação Desktop */}
           <nav className="hidden md:flex items-center gap-8 font-semibold text-sm text-foreground/80">
@@ -391,12 +392,13 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16 items-start">
             <div className="text-center md:text-left flex flex-col items-center md:items-start">
-              <div className="relative h-16 md:h-20 w-[240px] md:w-[320px] mb-6 opacity-90">
+              <Link href="/" className="mb-6 opacity-90 inline-block">
                 <Image
                   src="/images/logo.png"
                   alt="Logo Parque dos Buritis 2"
-                  fill
-                  className="object-contain object-left md:object-left"
+                  width={300}
+                  height={86}
+                  className="w-[200px] md:w-[300px] h-auto object-contain"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
                     e.currentTarget.parentElement?.classList.add('fallback-logo');
@@ -405,7 +407,7 @@ export default function Home() {
                 <span className="hidden font-bold text-xl text-white tracking-tight fallback-text">
                   Parque dos Buritis 2
                 </span>
-              </div>
+              </Link>
               <p className="text-stone-400 text-sm max-w-xs text-center md:text-left leading-relaxed">
                 Realize o sonho da casa própria com as melhores condições e infraestrutura completa para sua família.
               </p>
