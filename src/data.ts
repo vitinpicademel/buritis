@@ -1,6 +1,6 @@
 export const siteData = {
   whatsappLink: 'https://wa.me/5534999781900?text=Olá,%20vim%20pelo%20anúncio%20do%20YouTube%20e%20gostaria%20de%20mais%20informações',
-  telefone: '(34) 9978-1900',
+  telefone: '(34) 99978-1900',
   imobiliaria: {
     nome: 'Donna Imobiliária Uberaba',
     endereco: 'R. Dona Rafa Cecilio, 75 - Vila Maria Helena, Uberaba - MG, 38020-080',
