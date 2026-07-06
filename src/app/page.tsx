@@ -450,8 +450,19 @@ export default function Home() {
               ))}
             </div>
             
-            <div className="text-center text-stone-500 text-xs">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-stone-500 text-xs">
               <p>&copy; {new Date().getFullYear()} {siteData.imobiliaria.nome}. Todos os direitos reservados.</p>
+              <p>
+                Desenvolvido por{" "}
+                <Link
+                  href="https://www.instagram.com/orbytaads/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-300 hover:text-white font-medium transition-colors hover:underline"
+                >
+                  Orbyta - Ads
+                </Link>
+              </p>
             </div>
           </div>
         </div>
