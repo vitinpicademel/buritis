@@ -1,5 +1,5 @@
 export const siteData = {
-  whatsappLink: 'https://api.whatsapp.com/send/?phone=5534999781900&text=Ol%C3%A1%2C+vim+pelo+an%C3%BAncio+do+YouTube+e+gostaria+de+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0',
+  whatsappLink: 'https://wa.me/5534999781900?text=Olá,%20vim%20pelo%20anúncio%20do%20YouTube%20e%20gostaria%20de%20mais%20informações',
   telefone: '(34) 9978-1900',
   imobiliaria: {
     nome: 'Donna Imobiliária Uberaba',
