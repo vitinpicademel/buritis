@@ -199,6 +199,17 @@ export default function Home() {
                       fill
                       className="object-cover transition-transform duration-500 hover:scale-105"
                     />
+                    {idx === 0 && (
+                      <div className="absolute top-3 right-3 z-10 bg-white/90 p-1.5 rounded-lg shadow-sm backdrop-blur-sm pointer-events-none">
+                        <Image
+                          src="/images/logo-mcmv.png"
+                          alt="Minha Casa Minha Vida"
+                          width={60}
+                          height={40}
+                          className="object-contain"
+                        />
+                      </div>
+                    )}
                   </div>
                   <div className="p-6 flex-1 flex flex-col">
                   <div className="flex justify-between items-start mb-2">
