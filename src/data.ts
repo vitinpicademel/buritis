@@ -34,7 +34,7 @@ export const siteData = {
         '99 m² de área construída / terreno de 200 m²',
         'Quadra 09, Lote 30',
         'Em construção — previsão de entrega 01/09/2026',
-        'Pode ser financiada pelo programa MCMV — faixa 4',
+        'Casas até R$600.000,00 entra no faixa 4 do MCMV em condições diferenciadas !',
       ],
       promocao: '*Preço promocional até 31/07/2026, após esta data consultar preço de venda',
       infos: {
