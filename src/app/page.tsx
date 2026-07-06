@@ -11,29 +11,25 @@ import { FadeIn } from "../components/FadeIn";
 
 const carrosselImages = [
   "/images/carrossel/foto1.jpeg",
-  "/images/carrossel/foto2.png",
+  "/images/carrossel/foto2.jpeg",
   "/images/carrossel/foto3.jpeg",
   "/images/carrossel/foto4.jpeg",
-  "/images/carrossel/foto5.jpeg",
+  "/images/carrossel/foto5.png",
   "/images/carrossel/foto6.jpeg",
 ];
 
 const internasImages = [
-  "/images/internas/foto1.jpeg",
-  "/images/internas/foto2.png",
+  "/images/internas/foto1.png",
+  "/images/internas/foto2.jpeg",
   "/images/internas/foto3.jpeg",
   "/images/internas/foto4.jpeg",
-  "/images/internas/foto5.jpeg",
-  "/images/internas/foto6.jpeg",
 ];
 
 const lazerImages = [
   "/images/lazer/foto1.jpeg",
-  "/images/lazer/foto2.png",
+  "/images/lazer/foto2.jpeg",
   "/images/lazer/foto3.jpeg",
   "/images/lazer/foto4.jpeg",
-  "/images/lazer/foto5.jpeg",
-  "/images/lazer/foto6.jpeg",
 ];
 
 export default function Home() {
@@ -62,7 +58,7 @@ export default function Home() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-black/5 shadow-sm transition-all">
         <div className="container mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
           {/* Logo */}
-          <div className="relative h-[48px] w-48 shrink-0">
+          <div className="relative h-[60px] w-[200px] md:h-[72px] md:w-[260px] shrink-0">
             <Image
               src="/images/logo.png"
               alt="Logo Parque dos Buritis 2"
@@ -395,7 +391,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16 items-start">
             <div className="text-center md:text-left flex flex-col items-center md:items-start">
-              <div className="relative h-[48px] w-48 mb-6 opacity-90">
+              <div className="relative h-[72px] w-[260px] mb-6 opacity-90">
                 <Image
                   src="/images/logo.png"
                   alt="Logo Parque dos Buritis 2"
